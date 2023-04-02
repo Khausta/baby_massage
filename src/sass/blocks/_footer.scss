@@ -1,0 +1,8 @@
+.footer {
+    &__block {
+        background: url(../img/footer_bg.jpg) center center/cover no-repeat;
+        min-height: 300px;
+        padding: 0 20px;
+        padding-top: 10px;
+    }
+}

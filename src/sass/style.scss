@@ -1,0 +1,208 @@
+@import 'base/variables';
+@import 'base/normalize';
+@import 'base/mixins';
+
+
+
+
+@font-face {
+	font-family: 'CaveatBrush-Regular'; 
+	src: url("../fonts/CaveatBrush-Regular.ttf");
+    font-style: normal;
+    font-weight: normal;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+// *, *::after, *::before {
+//     box-sizing: inherit;
+    
+// }
+
+body {
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;   
+    margin: 0 auto;
+}   
+
+.header {
+    
+    &__inner {
+        @include inner;
+        background-color: $main-color;
+        padding: 0 20px;
+        .flags {
+            position: absolute;
+            top: -3px;
+            left: -10px;
+            transform: rotate(-20deg);
+            z-index: 0;
+            img {
+                max-width: 100px;
+            }
+        }
+        .logo {
+            
+            z-index: 1;
+            &__name {
+                font-family: 'CaveatBrush-Regular', 'cursive';
+                font-size: 20px;
+                
+            }
+        }
+    }
+    &__menu {
+        &_hamburger {
+            width: 40px;
+            height: 40px;
+            background-color: #ffffff;
+            border-radius: 3px;
+            position: relative;
+            &::after {
+                content: "";
+                width: 20px;
+                height: 3px;
+                border-radius: 1px;
+                background-color: $main-color;
+                position: absolute;
+                top: 15px;
+                left: 10px;
+                box-shadow: 0 4px 0 0 $main-color, 0 8px 0 0 $main-color;
+
+            }
+          
+        }
+    
+}
+
+
+
+}
+
+.promo {
+    background: url('../img/Photo_1.JPG') center center/cover no-repeat;
+    min-height: 280px;
+}
+
+.contacts {
+    
+    &__inner {
+
+        background-color: $second-color;
+        
+        min-height: 40px;
+        &_block {
+            position: relative;
+            padding: 0 4px;  
+        }
+        &_items {
+            position: relative;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 0 18px;
+            min-height: 60px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 20px 64px -8px rgb(43 47 57 / 5%);
+            top: -30px; 
+        
+        }
+        &_item {
+            &-line {
+                
+                width: 1px;
+                height: 35px;
+                margin: 0 10px;
+                background-color: $main-color;
+
+            }
+            
+            a {
+                // display: block;
+                img {
+                    height: 20px;
+                }
+            }
+
+            
+        }
+        
+    }
+}
+
+.about-me {
+    
+    &__cards {
+        background-color: $second-color;
+        padding: 40px 4px;
+        min-height: 400px;
+        display: grid;
+        gap: 20px;
+        justify-items: center;
+        align-items: center;
+        
+       
+    }
+
+    &__info {
+           
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 20px 64px -8px rgb(43 47 57 / 3%);
+        .photo {
+            
+            img {
+                margin-top: -65px;
+                width: 100px;
+            }
+        }
+        .text {
+            text-align: center;
+            padding: 0 20px;
+            color: #494949;
+        }
+        &-add {
+          ul {
+            padding-inline-start: 20px;
+            li {
+                padding: 0 20px;
+            }
+          }  
+
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import 'base/media';
+@import 'blocks/certificate';
+@import 'blocks/map';
+@import 'blocks/commits';
+@import 'blocks/photos';
+@import 'blocks/footer';
+@import 'blocks/menu';
+    
+    
+ 

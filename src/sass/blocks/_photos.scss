@@ -1,0 +1,26 @@
+.photos {
+    &__block {
+        background-color: $second-color;
+        padding: 40px 4px;
+        min-height: 300px;
+        
+        &_border {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 20px 64px -8px rgb(43 47 57 / 3%);
+            text-align: center;
+            padding: 20px 4px;
+            .box {
+                max-height: 420px;
+                max-width: 100%;
+                
+                
+                img {
+                    height: 420px;
+                    object-fit: contain;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
