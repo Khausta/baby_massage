@@ -11,13 +11,31 @@
             a {
                 text-decoration: none;
                 color: #fff;
-                &:hover {
-                    color: $main-color;
-                }
+                
     
             }
         }
         
 
     }
+    &-top {
+        position: absolute;
+        background: rgba(0, 0, 0, 0.8);
+        margin-top: 20px;
+        
+        z-index: 1000;
+        left: -3000px;
+        top: 60px;
+        display: flex;
+        justify-content: space-around;
+        height: 60vh;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 40px 0;
+        &-active {
+            left: 0px;
+        }
+        
+    }
+
 }

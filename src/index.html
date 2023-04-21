@@ -11,34 +11,79 @@
     <link rel="stylesheet" href="fonts/CaveatBrush-Regular.ttf">
    
     <title>Baby Massage</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff"> 
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__inner">
-                <div class="flags">
-                    <img src="../img/flags.png" alt="flags">
-                </div>
-                
-                <div class="logo">
-                    <div class="logo__name">
-                        Детский массаж
+            <div class="header__block">
+                <div class="header__inner">
+                    <div class="flags">
+                        <img src="../img/flags.png" alt="flags">
                     </div>
-                    <div class="logo__subname">
-                        с выездом на дом
+                    
+                    <div class="logo">
+                        <div class="logo__name">
+                            Детский массаж
+                        </div>
+                        <div class="logo__subname">
+                            с выездом на дом
+                        </div>
+                        <div class="logo__phone">
+                            <a href="tel:+79295329903">+7 929 532-99-03</a>
+                        </div>
+                       
                     </div>
-                   
-                </div>
 
-                <nav class="header__menu">
-                    <div class="header__menu_hamburger">
-                        <!-- <div class="header__menu_hamburger-spans">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div> -->
+                    <div class="menu_list menu_list-top">
+                        <ul >
+                            <li class="menuItem">
+                                <a href="#about-me">Обо мне</a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="#certificate">Сертификация</a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="#map">Карта</a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="#commits">Отзывы</a>
+                            </li>
+                            <li class="menuItem">
+                                <a href="#photos">
+                                    Фотографии
+                                </a>
+                            </li>
+                        </ul>
                     </div>
-                </nav>
+
+                    
+                    
+                    <nav class="header__menu">
+                        
+                        <div class="header__menu_hamburger">
+                        
+                        </div>
+                        
+                    </nav>
+                </div>
             </div>
         </div>
     </header>
@@ -52,6 +97,12 @@
                 <div class="contacts__inner_block">
                     
                     <div class="contacts__inner_items">
+                        <div class='contacts__inner_item'>
+                            <a href="https://wa.me/9295329903">
+                                <img src="/icons/whatsapp.png" alt="whatsapp">
+                            </a>
+                        </div>
+                        <div class='contacts__inner_item-line'></div>
                         <div class='contacts__inner_item'>
                             <a href="https://vk.com/babymassage_khimki">
                                 <img src="/icons/vk1.png" alt="vk">
@@ -77,7 +128,7 @@
             
         </div>
     </section>
-    <section class="about-me">
+    <section class="about-me" id="about-me">
         <div class="container">
             <div class="about-me__cards">
                 <div class="about-me__cards_1">
@@ -105,7 +156,6 @@
                         
                            <h2>Обо мне</h2> 
                         
-                        
                         <ul>
                             <li>Есть медицинское образование</li>
                             <li>Непрерывный опыт с 2015 года</li>
@@ -116,11 +166,45 @@
                     </div>
 
                 </div>
-                 
+
+                <div class="about-me__cards_3">
+                    <div class="about-me__info">
+                        
+                        <div class="modal" id="call">
+                            <!-- <div class="modal__close">&times;</div> -->
+                            <div class="modal__subtitle">Заказать звонок</div>
+                            <div class="modal__desc">Оставьте свои данные и я перезвоню в ближайшее время, чтобы ответить на все Ваши вопросы и записать</div>
+                
+                            <form id="form" class="feed_form" action="#">
+                                <input name="name" placeholder="Ваше имя" value="" type="text">
+                                <input name="phone" placeholder="Ваш телефон">
+                                <textarea name="text" placeholder="Дополнительная информация" rows="5" maxlength="200" style="resize:none;  border: solid 1px rgba(17,17,34,.2);
+                                margin-bottom: 21px;padding: 20px;font-weight: 400;font-size: 14px;line-height: 20px;"></textarea>
+                                                                
+                               <div class="policy">
+                                    
+                                    <input name="checked" required type="checkbox" class="checkbox">
+                                    <span> Я согласен(а) с <a href="/policy.html">Политикой конфиденциальности</a></span> 
+                                    
+                               </div>
+                                
+                                <button class="btn">Отправить</button>
+
+                            </form>
+                        </div>
+                 </div>
+                </div>
+                <div class="about-me__cards_4">
+                    <div class="about-me__info">
+
+                 </div>
+                </div> 
+
             </div>
         </div>
     </section>
-    <section class="certificate">
+    
+    <section class="certificate" id="certificate">
         <div class="container">
            <div class="certificate__block">
                 <div class="certificate__block_border">
@@ -145,7 +229,7 @@
            </div>
         </div>
     </section>
-    <section class="map">
+    <section class="map" id="map">
         <div class="container">
             <div class="map__block">
                 <div class="map__block_border">
@@ -157,7 +241,7 @@
             </div>
         </div>
     </section>
-    <section class="commits">
+    <section class="commits" id="commits">
         <div class="container">
             <div class="commits__block">
                 <div class="commits__block_border">
@@ -199,7 +283,7 @@
             </div>
         </div>
     </section>
-    <section class="photos">
+    <section class="photos" id="photos">
         <div class="container">
             <div class="photos__block">
                 <div class="photos__block_border">
@@ -222,7 +306,7 @@
                         </div>
                         <div >
                             <div class="box">
-                                <img src="img/photos_4.jpg" alt=""> 
+                                <img src="img/photos_4.JPG" alt=""> 
                             </div>
                         </div>
                         <div >
@@ -247,19 +331,19 @@
                 <div class="menu_list">
                     <ul>
                         <li>
-                            <a href="#">Обо мне</a>
+                            <a href="#about-me">Обо мне</a>
                         </li>
                         <li>
-                            <a href="#">Сертификация</a>
+                            <a href="#certificate">Сертификация</a>
                         </li>
                         <li>
-                            <a href="#">Карта</a>
+                            <a href="#map">Карта</a>
                         </li>
                         <li>
-                            <a href="#">Отзывы</a>
+                            <a href="#commits">Отзывы</a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="#photos">
                                 Фотографии
                             </a>
                         </li>
@@ -269,8 +353,17 @@
             </div>
         </div>
     </section>
+    <div class="overlay">
+        <div class="modal" id="thanks">
+            <div class="modal__close">&times;</div>
+            <div class="modal__subtitle">Спасибо за вашу заявку!</div>
+            <div class="modal__desc">Я позвоню в ближайшее время!</div>
+        </div>
+    </div>
     <script src="js/jquery-3.6.4.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

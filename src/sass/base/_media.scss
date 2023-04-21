@@ -3,10 +3,16 @@
         &__cards {
             padding-top: 30px;
             grid-template-columns: 1fr 1fr;
+            
+            &_4 {
+                display: block ;
+            }
+            
         }
         &__info {
             max-width: 340px;
         }
+        
     }
 
     
@@ -19,6 +25,9 @@
     .header {
         &__inner {
             min-height: 100px;
+        }
+        .menu_list-top-active {
+            top: 80px;
         }
     }
     .promo {
@@ -56,10 +65,59 @@
     // .container {
     //     padding: 0 40px;
     // }
+
+    .header {
+        &__menu {
+            &_hamburger {
+                display: none;
+            }
+        }
+        .menu_list{
+            // padding-top: 40px;
+                display: block;
+                position: inherit;
+                background: none;
+                height: 80px;
+                padding-bottom: 0;
+                padding-top: 0; 
+                // margin-top: 0;
+                width: 60%;
+            ul {
+                flex-direction: row;
+                li {
+                    a {
+                        &:hover {
+                            color: #f8e10f;
+                            border-bottom: solid 2px #f8e10f;
+                        }
+                    }
+                }
+            }
+            
+        }   
+        
+         
+    }   
+    
+
     .promo {
         min-height: 700px;
     }
        
+    .footer {
+        &__block {
+            ul {
+                li {
+                    a {
+                       &:hover {
+                            color: #f8e10f;
+                            border-bottom: solid 2px #f8e10f;
+                        } 
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 1024px) {
@@ -70,14 +128,30 @@
     .promo {
         min-height: 900px;
     }
+    .about-me {
+        &__cards {
+            padding-top: 30px;
+            grid-template-columns: 1fr 1fr 1fr;
+            &_4 {
+                display: none;
+            }
+        }
+        
+        
+    }
        
 }
 @media (min-width: 1440px) {
     .container {
         max-width: 1320px;
     }
+    .header__block {
+        max-width: 1320px;
+        margin-top: 0px;
+    }
     .promo {
         margin: 0 auto;
         max-width: 1320px;
+        
     }
 }
